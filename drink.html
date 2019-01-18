@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>drink</title>
+		<link rel="stylesheet" type="text/css" href="css/Global_Settings.css">
+		<link rel="stylesheet" type="text/css" href="css/drink1.css">
+	</head>
+
+	<body>
+		<header></header>
+		<!-- 主体 -->
+		<main>
+			<div class="center">
+				<div>
+					<span>当前位置：</span>
+					<span>产品展示</span> >
+					<span>饮品</span>
+				</div>
+				<!-- 点击的ul -->
+				<ul class="title">
+					<li>
+						<p>花清茶系列</p>
+					</li>
+					<li>
+						<p>花果茶系列</p>
+					</li>
+					<li>
+						<p>花语网红系列</p>
+					</li>
+					<li>
+						<p>花语特色小吃</p>
+					</li>
+				</ul>
+				<!-- 变化的ul -->
+				<ul>
+					<div class='drink'>
+					</div>
+					<div class="arrows">
+						<button class='left'><</button>
+						<div class="num"></div>
+						<button class='right'>></button>
+					</div>
+				</ul>
+			</div>
+		</main>
+		<footer></footer>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('header').load('header2.html');
+				$('footer').load('footer.html');
+			})
+		</script>
+		<script src="js/drink.js"></script>
+
+	</body>
+
+</html>

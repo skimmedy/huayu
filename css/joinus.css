@@ -1,0 +1,21 @@
+main .center article section h1{
+    font-size: 4rem;
+    float: left;
+    margin-bottom: 3.6rem;
+}
+main .center article section h2{
+    line-height: 4rem;
+    margin-top: 3.6rem;
+}
+main .center article section h3{
+    line-height: 0;
+}
+main .center article h3:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+main li{
+    display: list-item;
+    list-style: none;
+}

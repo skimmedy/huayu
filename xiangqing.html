@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.box {
+			width: 1000px;
+			margin: 0 auto;
+		}
+	</style>
+
+	<body>
+		<div class="box">
+			<!--<h1></h1>
+			<span></span>
+			<p></p>-->
+		</div>
+	</body>
+	<script src="AJAX.js"></script>
+	<script type="text/javascript">
+		var obox = document.getElementsByClassName("box")[0]
+		var obj = {};
+		var search = location.search.substring(1, );
+		var arr = search.split("&")
+		var  num=search.substring(search.indexOf("=") + 1,);
+		console.log(num)
+		arr.forEach(function(item) {
+			obj[item.split("=")[0]] = item.split("=")[1]
+		})
+		ajax("get", "json.json", "", function(data) {
+			var ari = JSON.parse(data);
+			ari.forEach(function(item) {
+				if (item.id==num) {
+					obox.innerHTML = `<h1>${item.h1}</h1>
+			<span>${item.time}</span>
+			<p>${item.p}</p>`
+				}
+				
+			})
+		})
+	</script>
+
+</html>

@@ -1,0 +1,119 @@
+header {
+	margin-bottom: 2.3rem;
+	position: relative;
+}
+
+nav {
+	background-color: #252525;
+	height: 5.56rem;
+	opacity: 0.5;
+	margin: auto;
+	position: relative;
+	z-index: 9;
+}
+
+header>ul {
+	position: absolute;
+	bottom: 4.5rem;
+	right: 37.2rem;
+}
+
+header>ul>li {
+	width: 2.1rem;
+	height: 0.6rem;
+	margin-left: 1.5rem;
+	background-color: white;
+	border-radius: 1rem;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+nav .center>img {
+	padding-top: 1rem;
+	float: left;
+}
+
+nav .center>ul {
+	line-height: 5.56rem;
+	float: left;
+	margin-left: 7.6rem;
+}
+
+nav .center ul>li {
+	text-align: center;
+	width: 7.6rem;
+}
+
+nav.navslideshow {
+	margin: auto;
+}
+
+
+/*banner轮播*/
+
+.banner {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 8;
+	
+}
+
+.banner_cont {
+	position: relative;
+	/*overflow: hidden;*/
+}
+
+.move {
+	position: relative;
+	left: 0px;
+	display: flex;
+	width: 700%;
+	/*transition: all 1s ease;*/
+}
+
+.move li img {
+	width: 100%;
+	height: 100%;
+}
+
+.banner_bot {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.bot1{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -50px;
+	font-size: 70px;
+	cursor: pointer;
+}
+.bot2{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -50px;
+	font-size: 70px;
+	cursor: pointer;
+}
+.movel {
+	position: absolute;	
+	bottom: 110px;
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+}
+.movel li{
+	width: 40px;
+	height: 10px;
+	background-color: white;
+	border-radius:10px;
+}
+
+/*事件触发*/
+
+nav .center ul>li:hover {
+	background-color: black;
+}

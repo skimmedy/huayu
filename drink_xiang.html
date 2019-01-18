@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.xiang {
+			width: 1100px;
+			height: 400px;
+			margin: 0 auto;
+		}
+		
+		.xiang img {
+			float: left;
+		}
+		
+		.xiang h2,
+		p {
+			text-align: center;
+		}
+	</style>
+
+	<body>
+		<div class="xiang">
+				<!--<img src="img/drinkimg1.png" />
+				<h2>123</h2>
+				<p>123</p>-->
+			</div>
+	</body>
+		<script src="js/AJAX.js"></script>
+	<script type="text/javascript">
+		var obox = document.getElementsByClassName("xiang")[0]
+		var obj = {};
+		var search = location.search.substring(1, );
+		var arr = search.split("&")
+		var  num=search.substring(search.indexOf("=") + 1,);
+//		console.log(num)
+		arr.forEach(function(item) {
+			obj[item.split("=")[0]] = item.split("=")[1]
+		})
+		ajax("get", "js/drink.js", "json", function(json) {
+			var ari = JSON.parse(json).subjects;
+			ari.forEach(function(item) {
+				if (item.id==num) {
+					obox.innerHTML = `<img src="${item.img}" />
+				<h2>${item.title}</h2>
+				<p>${item.title}</p>`
+				}
+				
+			})
+		})
+	</script>
+
+</html>

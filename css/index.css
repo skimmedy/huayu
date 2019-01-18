@@ -1,0 +1,242 @@
+/*统一写*/
+.aboutme>img,.news>img,.jogin_problem>img{
+	display: block;
+	margin:auto;
+	margin-bottom: 2rem;
+}
+/*关于我们*/
+.aboutmebgcolor{
+	background-image: url("../img/flowerbgcolor.png");
+	height: 22.5rem;
+	width: 68.68rem;
+	overflow: hidden;
+}
+.aboutmebgcolor>img{
+	float: left;
+	height: 19rem;
+	margin: 2rem;
+}
+.aboutmebgcolor section{
+	margin: 2rem;
+	width: 32rem;
+	float: left;
+}
+.aboutmebgcolor section>h1{
+	font-size: 19.8px;
+	color: #eee;
+	background-color: #666666;
+	width: 7rem;
+	margin-bottom: 2rem;
+}
+.aboutmebgcolor section p{
+	margin-top: 1rem;
+}
+/*花语饮品*/
+.huayuyinping{
+	margin-top: 2rem;
+}
+.huayuyinping>div{
+	float: left;
+}
+.huayuyinping>div:nth-child(1){
+	width: 24.6rem;
+	margin-right: 0.12rem;
+}
+.huayuyinping>div:nth-child(2){
+	width: 43.88rem;
+}
+.huayuyinping>div>p{
+	width: 18rem;
+	text-align: center;
+	margin:auto;
+	font-size: 1.45rem;
+	}
+.huayuyinping>div>p:nth-child(1){
+	font-family: 'Cambria Math';
+	border-bottom: 1px dashed black;
+	font-weight: bold;
+}
+.huayuyinping>div>p:nth-child(2){
+	font-weight:100;
+	line-height: 2.5rem;
+}
+.huayuyinping>div:nth-child(2)>img:nth-child(3){
+	float: right;
+}
+.huayuyinping:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+/*更多新品*/
+.newtea section{
+	width: 16rem;
+	margin:auto;
+	margin-top: 4rem;
+	text-align: center;
+	padding-bottom: 0.3rem;
+	border-bottom: 2px dashed #252525;
+}
+.newtea section h2{
+	color: #252525;
+	font-size: 27px;
+	font-weight: normal;
+	display: inline;		
+} 
+.newtea section h1{
+	color: white;
+	font-size: 30px;
+	font-weight: normal;
+	background-color: #252525;
+	display: inline;
+}
+.newtea>p{
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.leftarr{
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	transform: rotate(45deg);
+	border-bottom: 0.5rem solid;
+	border-left: 0.5rem solid;
+	margin-bottom: 6rem;
+	cursor: pointer;
+}
+.rightarr{
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	transform: rotate(45deg);
+	border-top: 0.5rem solid;
+	border-right: 0.5rem solid;
+	margin-bottom: 6rem;
+	cursor: pointer;
+}
+.newteaslideshow{
+	width: 69rem;
+	margin: auto;
+	text-align: center;
+}
+.newtea:after{
+	content: "";
+	display: inline-block;
+	clear: both;
+}
+.newsslideshow{
+	display: flex;
+	width: 1100px;
+	margin: auto;
+	overflow: hidden;
+	justify-content: space-between;
+}
+.newsslideshow>li{
+	width: 31.6rem;
+	height: 22.6rem;
+	margin-left: 75px;
+	position: relative;
+	left: 0;
+	transition: all 1s ease;
+}
+.newsslideshow>li:nth-child(1){
+	background-image: url(../img/newsbgcolor.png);
+}
+.newsslideshow>li:nth-child(2){
+	background-image: url(../img/newsbgcolor2.png);
+}
+.newsslideshow>li:nth-child(3){
+	background-image: url(../img/newsbgcolor2.png);
+}
+.newsslideshow>li>ul{
+	width: 23.6rem;
+	height: 14.6rem;
+	background-color: #252525;
+	opacity: 0.7;
+	margin:auto;
+	padding:2rem;
+	margin-top: 2.5rem;
+}
+.newsslideshow>li>ul>li{
+	list-style: disc;
+	color: white;
+	display: list-item;
+}
+.newsslideshow>li>ul>li a{
+	font-size: 1.2rem;
+}
+.newsslideshow>li>ul>li section{
+	margin-top: 0.5rem;
+	padding-top: 1.2rem;
+	border-top: 0.1rem dashed white;
+}
+.newsslideshow>li>ul>li section>span{
+	display: block;
+	width: 372px;
+	height: 66px;
+	overflow:hidden;
+	 white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.newsslideshow>li>ul>li a:hover{
+	text-decoration: underline;
+}
+/*圆点*/
+.dot{
+	width: 69rem;
+	margin-top: 3rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.dot>li{
+	width: 2rem;
+	height: 2rem;
+	background-color: #252525;
+	opacity: 0.7;
+	border-radius: 50%;
+	margin-left: 4rem;
+}
+.dot>li:nth-child(1){
+	margin:0;
+}
+/*加盟*/
+.jogin_problem{
+	margin-bottom: 3rem;
+}
+.jogin_problem>ul{
+	float: left;
+}
+.jogin_problem>ul>li{
+	width: 31.6rem;
+	display: block;
+	border-bottom: 0.1rem dashed black;
+	margin-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.jogin_problem>ul>li a{
+	color: black;
+	font-size: 1.2rem;
+}
+.jogin_problem>div{
+	float: left;
+	position: relative;
+	margin-left: 2rem;
+}
+.jogin_problem:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.jogin_problem>div>section{
+	width: 25rem;
+	height: 10rem;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0.7;
+	position: absolute;
+	top: 14rem;
+	right: 5rem;
+	color: white;
+}
+.jogin_problem>ul>li a:hover{
+	text-decoration: underline;
+}
